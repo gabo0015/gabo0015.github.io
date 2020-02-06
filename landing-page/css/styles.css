@@ -159,7 +159,6 @@ footer .media-icons {
     main {
 		display: grid;
         grid-template-columns: repeat(3, 1fr);
-        max-width: 1700px;
         margin: auto;
 	}
 
