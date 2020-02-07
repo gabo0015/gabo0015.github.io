@@ -26,10 +26,14 @@ header h1 {
 }
 
 div p {
+    margin-top: 1rem;
     font-size: 24px;
 }
 
-
+form p {
+    margin-top: 1rem;
+    font-size: 17px;
+}
 
 .main-form {
     background-color: white;
@@ -60,12 +64,12 @@ fieldset input[type=text], fieldset input[type=number] {
     font-weight: 500;
 }
 
-/*.main-form input[type=checkbox] {
+.main-form input[type=checkbox] {
     width: 20px;
     height: 20px;
-    border: none;
-    border-radius: 5px;
-}*/
+    margin-top: .5rem;
+    
+}
 
 button {
     border: none;
@@ -130,6 +134,10 @@ footer .media-icons {
 
 @media (min-width: 650px) {
     
+    mainc{
+        background-position: 50% 90%; 
+    }
+
     h1 {
         font-size: 80px;
     }
@@ -155,12 +163,52 @@ footer .media-icons {
 
 }
 
-@media (min-width: 960px) {
-    main {
-		display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 1700px;
-        margin: auto;
-	}
+@media (min-width: 1160px) {
 
+    header, .wrapper {
+        margin: 4em;
+    }
+
+    main {
+        margin-bottom: 0em;
+    }
+
+    .wrapper {
+		display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin-bottom: 0em;
+    }
+    
+    main div div {
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
+
+    main div form {
+        grid-column: 9 / 13;
+        grid-row: 1;
+        margin-bottom: 10vw ;
+    }
+
+    main div img {
+        grid-column: 4 / 10;
+        grid-row: 1;
+        height: 550px;
+    }
+
+    footer div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .media-icons {
+        padding: 0;
+        margin: 0;
+        justify-self: end;
+    }
+
+    .media-icons img {
+        margin-right: 45px;
+        margin-bottom: 45px;
+    }
 }
