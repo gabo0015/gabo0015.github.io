@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway';
+}
+
+header {
+  background-color: #3C3B3A;
+  margin: auto;
+}
+
+header img {
+  width: 88px;
+  height: auto;
+}
+
+/*styles the nav in the header*/
+header nav ul li {
+  border-bottom: 1px solid white;
+}
+
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  background-color: #3C3B3A;
+  color: white;
+  transition: .5s ease-in-out;
+}
+
+header nav ul li a:hover {
+  background-color: #707078;
+  transition-duration: .2s;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/*styles the nav in the header*/
+
+/* dropdown menu styling*/
+.menu-items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+/* sets a display of none so that the menu items (nav) are not seen while the dropdown menu is not active */
+
+.drop:hover .menu-items {
+  z-index: 1;
+  display: block;
+}
+
+/*sets the display to block when the menu button is hovered on to have it display, Then sets a z-index of 1 to have the menu to display on top of the other content on the page */
+
+nav button {
+  padding: .5em 2.5em;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(51, 51, 50);
+  border: none;
+  border-bottom: 1px solid white;
+}
+/* styles the button for the drop down menu as well as the submit button on the contact form*/
+
+button:hover {
+  background-color: #707078;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+/* adds a hover effect to the buttons*/
+
+button:hover img {
+  animation: rotateMenu 0.4s ease-in backwards;
+}
+/*Adds an animation to the dropdown menu*/
+/* ^^^dropdown menu styling^^^ */
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 35px;
+  color: #3C3B3A;
+  font-size: 16px;
+}
+
+h1 {
+  color: #3C3B3A;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+h2 {
+  margin-top: 30px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 600;
+  color: #3C3B3A;
+}
+h3 {
+  margin-top: 10px;
+  color: #26A682;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 40px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 32px;
+  color: #3C3B3A;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #3C3B3A;
+}
+
+.header-img {
+  display: flex;
+  justify-content: center;
+}
+
+h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contact-form {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.disc-icon {
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 21px;
+  justify-content: space-between;
+}
+
+.disc-icon a {
+  display: grid;
+  align-content: space-around;
+  justify-items: center;
+  justify-content: space-around;
+  color: #26A682;
+}
+
+.disc-icon a:nth-child(2) {
+  grid-column: 3 / 4;
+}
+
+.disc-icon a:nth-child(4) {
+  grid-column: 3 / 4;
+}
+
+.disc-icon img{
+  width: 39px;
+  height: auto;
+  color: #3C3B3A;
+}
+
+.green-btn-LG {
+  width: calc(100% - 72px);
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background-color: #26A682;
+  border: none;
+  border-radius: 2.5em;
+  font-family: 'Raleway';
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 30px;
+  box-shadow: 0px 15px 20px rgba(18, 74, 58, 0.479);
+}
+
+.green-btn {
+  width: calc(50% - 36px);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #26A682;
+  border: none;
+  border-radius: 2.5em;
+  font-family: 'Raleway';
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 50%;
+  box-shadow: 0px 15px 20px rgba(18, 74, 58, 0.479);
+}
+
+.green-btn-LG:hover, .green-btn:hover {
+  background-color: rgb(21, 100, 78);
+  animation: buttonBounce 1s ease-in backwards;
+}
+
+.disc-img {
+  margin-top: 30px;
+}
+
+.sa-president {
+  background-color: #3C3B3A;
+  margin-top: 35px;
+  padding-bottom: 50px;
+}
+
+.sa-title {
+  width: 50%;
+  margin: auto;
+}
+
+.sa-title img {
+  margin-top: 30px;
+  border: 5px solid #F2F2F2;
+  border-radius: 100%;
+}
+.sa-president p {
+  color: white;
+}
+.sa-title p{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center
+}
+
+
+.n-a-b img,.comp-fr img, .n-y-n-m img, .ind-climb img{
+  display: none;
+} 
+
+.who-what-where {
+  background-color: #F2F2F2;
+  padding-top: 25px;
+}
+
+.n-a-b, .comp-fr, .n-y-n-m, .ind-climb {
+  padding-top: 25px;
+}
+
+.comp-fr {
+  background-color: #F2F2F2;
+}
+
+.subscribe {
+  background-color: #3C3B3A;
+  text-align: center;
+}
+
+.subscribe button {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #26A682;
+  border: none;
+  border-radius: 2.5em;
+  font-family: 'Raleway';
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.subscribe p {
+  color: white;
+  padding-top: 14px;
+}
+
+.ind-climb {
+  background-color: #F2F2F2;
+}
+
+.special-th {
+  text-align: center;
+  font-size: 56px;
+}
+
+.special-img img{
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.special-img img:nth-child(1){
+  width: 301px;
+  height: auto;
+}
+
+.special-img img:nth-child(2){
+  width: 202px;
+  height: auto;
+}
+
+.special-img img:nth-child(3){
+  width: 220px;
+  height: auto;
+}
+
+.special-img img:nth-child(4){
+  width: 152px;
+  height: auto;
+}
+
+
+
+/* Contact Form */
+
+.contact-form {
+  background-color: #26A682;
+  color: white;
+  border-radius: 1em;
+  border: none;
+  display: inline-block;
+  padding: 1em;
+}
+
+.contact-form fieldset {
+  border: none;
+  display: block;
+  margin: auto;
+}
+
+.contact-form fieldset input, .contact-form fieldset textarea {
+  width: 100%;
+  resize: none;
+  margin: auto;
+  padding: 0.6em;
+  border-radius: 2.5em;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-form fieldset textarea {
+  border-radius: 1em;
+}
+
+ form button {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #3C3B3A;
+  border: none;
+  border-radius: 2.5em;
+  font-family: 'Raleway';
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0px 15px 20px rgba(18, 74, 58, 0.479);
+}
+
+/* ^^Contact Form^^ */
+
+/*Footer Styles*/
+footer {
+  background-color: #3C3B3A;
+  margin-top: 35px;
+}
+
+.media-icon img {
+  width: 25px;
+  height: auto;
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.media-icon img:nth-child(5){
+  width: 30.5px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 190px 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  justify-content: end;
+  justify-items: end;
+}
+
+footer p {
+  color: white;
+  font-size: 24px;
+}
+
+footer a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 9px;
+  margin-top: 12px;
+  width: 47px;
+  margin-right: 15px;
+}
+
+.media-icon {
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+footer a img {
+  width: 22.2px;
+  height: auto; 
+  margin: 5px;
+}
+/* ^^^ Footer STyles ^^^*/
+
+
+/* KeyFrames for Animations */
+
+@keyframes rotateMenu {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes buttonBounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  85% {
+    transform: translateY(0px);
+  }
+  92% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  
+
+}
+/*Dropdown menu animation*/
+/* ^^^ KeyFrames for Animations ^^^ */
