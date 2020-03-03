@@ -149,6 +149,14 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   margin-right: 36px;
 }
 
+.contact-us img {
+  width: calc(100% - 72px);
+  margin-left: 36px;
+  margin-right: 36px;
+  display: block;
+  margin-bottom: 15px;
+}
+
 .disc-icon {
   margin-top: 21px;
   display: grid;
@@ -326,6 +334,30 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   height: auto;
 }
 
+.green-img1 {
+  background-image: url(../img/about.jpg);
+  height: 200px;
+  background-size: cover;
+  margin-top: 25px;
+}
+
+.green-img2 {
+  background-image: url(../img/services.jpg);
+  height: 200px;
+  background-size: cover;
+}
+
+.green-img1 h4, .green-img2 h4 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.who-what-where {
+  padding-bottom: 40px;
+  margin-bottom: -25px;
+}
 
 
 /* Contact Form */
@@ -335,8 +367,9 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   color: white;
   border-radius: 1em;
   border: none;
-  display: inline-block;
+  width: 100%;
   padding: 1em;
+  width: calc(100% - 72px);
 }
 
 .contact-form fieldset {
@@ -433,6 +466,49 @@ footer a img {
 }
 /* ^^^ Footer STyles ^^^*/
 
+@media (min-width: 650px) {
+  .dropbtn {
+    display: none;
+  }
+  
+  #menu-items {
+    display: inline-flex;
+    position: relative;
+    text-decoration: none;
+    justify-content: flex-end;
+    padding-right: 80px;
+    list-style-type: none;
+  }
+
+  header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+  }
+
+  header img {
+    margin-right: 100%;
+    margin-left: 250px;
+  }
+
+  header nav ul li {
+    border-bottom: none;
+  }
+
+  h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contact-form {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .contact-form {
+    width: calc(100% - 160px);
+  }
+  .contact-us img {
+    width: calc(100% - 160px);
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
 
 /* KeyFrames for Animations */
 
