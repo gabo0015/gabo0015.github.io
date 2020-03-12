@@ -720,11 +720,29 @@ footer a img {
 
 @media (min-width:960px) {
 
-  .home-header, .disc-grid, .construct-header, .contact-grid {
+  .home-header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .construct-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 80px;
   }
 
   .location {
@@ -735,6 +753,8 @@ footer a img {
 
   .disc-grid {
     background-color: #F2F2F2;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   
   .n-a-b, .n-y-n-m {
@@ -777,27 +797,29 @@ footer a img {
     transform: rotate(180deg);
   }
 
-  .disc-grid {
-    justify-items: center;
-    align-items: center;
-    padding-left: 140px;
-  }
-
   .special-img {
     display: flex;
     justify-content: space-between;
   }
 
-  .sa-title {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    align-items: center;
+  iframe {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
   }
 
-  .sa-title p {
-    padding-left: 100px;
+  footer {
+    margin-top: 0;
   }
 
+  .sa-president {
+    margin-top: 0;
+  }
+
+  .disc-grid {
+    padding-top: 0;
+  }
 
 }
 
@@ -808,6 +830,70 @@ footer a img {
     grid-template-columns: repeat(3 , 1fr);
   }
 
+  .disc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding-left: 80px;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .disc-grid-2 div {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .disc-grid-2 div h2, .disc-grid-2 div h3, .disc-grid-2 div p {
+    margin-left: 0;
+
+  }
+
+  .disc-grid-2 picture {
+    grid-column: 2 / 3;
+    padding-right: 80px;
+  }
+
+  .sa-title {
+    display: grid;
+    grid-template-columns: 100px 300px;
+    align-items: center;
+  }
+
+  .sa-title p {
+    margin-left: calc(35px + 3vw);
+  }
+
+  .sa-president {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sa-text {
+    padding-left: 10px;
+  }
+  
+  .who-what-where {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  .n-a-b, .n-y-n-m, .comp-fr, .ind-climb {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .special-th {
+    padding-right: 32%;
+    padding-left: 32%;
+    padding-top: 140px;
+  }
+
+  .special-img {
+    padding-bottom: 140px;
+  }
 }
 
 /* KeyFrames for Animations */
