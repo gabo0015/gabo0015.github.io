@@ -63,9 +63,12 @@ table {
   box-sizing: border-box;
 }
 
+/* default box model */
+
 body {
-  font-family: 'Raleway';
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
+/* font stack */
 
 header {
   background-color: #3C3B3A;
@@ -76,6 +79,7 @@ header img {
   width: 88px;
   height: auto;
 }
+/* header img and background color */
 
 /*styles the nav in the header*/
 header nav ul li {
@@ -101,8 +105,7 @@ header nav ul li a:hover {
 .active {
   font-weight: bold;
 }
-
-/*styles the nav in the header*/
+/* ^^^styles the nav in the header^^^ */
 
 /* dropdown menu styling*/
 .menu-items {
@@ -150,13 +153,16 @@ img {
   width: 100%;
   height: auto;
 }
+/* sets default img width */
 
 p {
   line-height: 35px;
   color: #3C3B3A;
   font-size: 16px;
 }
+/* default <p> styling */
 
+/* default header stylings */
 h1 {
   color: #3C3B3A;
   margin-top: 21px;
@@ -196,6 +202,7 @@ h6 {
   font-weight: 500;
   color: #3C3B3A;
 }
+/* ^^^default header stylings^^^ */
 
 .header-img {
   display: flex;
@@ -206,6 +213,7 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   margin-left: 36px;
   margin-right: 36px;
 }
+/* default mobile margins */
 
 .contact-us img {
   width: calc(100% - 72px);
@@ -214,7 +222,9 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   display: block;
   margin-bottom: 15px;
 }
+/* contact image styling */
 
+/* Discover ACR icon styles and layout */
 .disc-icon {
   margin-top: 21px;
   display: grid;
@@ -223,7 +233,7 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   grid-gap: 21px;
   justify-content: space-between;
 }
-
+/* grid */
 .disc-icon a {
   display: grid;
   align-content: space-around;
@@ -245,7 +255,9 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   height: auto;
   color: #3C3B3A;
 }
+/* ^^^Discover ACR icon styles and layout^^^ */
 
+/* button stylings */
 .green-btn-LG {
   width: calc(100% - 72px);
   font-size: 32px;
@@ -276,6 +288,7 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   margin-left: 50%;
   box-shadow: 0px 15px 20px rgba(18, 74, 58, 0.479);
 }
+/* ^^^button stylings^^^ */
 
 .green-btn-LG:hover, .green-btn:hover {
   background-color: rgb(21, 100, 78);
