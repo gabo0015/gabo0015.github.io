@@ -294,10 +294,12 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   background-color: rgb(21, 100, 78);
   animation: buttonBounce 1s ease-in backwards;
 }
+/* button hover efects and animation*/
 
 .disc-img {
   margin-top: 30px;
 }
+/* margin */
 
 .sa-president {
   background-color: #3C3B3A;
@@ -305,12 +307,10 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   padding-bottom: 50px;
   padding-top: 20px;
 }
-
 .sa-title {
   width: 50%;
   margin: auto;
 }
-
 .sa-title img {
   margin-top: 30px;
   border: 5px solid #F2F2F2;
@@ -329,30 +329,37 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   margin: 0;
   text-align: center
 }
+/* styles the SA President part of the page */
 
 
 .n-a-b img,.comp-fr img, .n-y-n-m img, .ind-climb img{
   display: none;
 } 
 
+/* removes images on about page at mobile */
+
 .who-what-where {
   background-color: #F2F2F2;
   padding-top: 25px;
+  padding-bottom: 40px;
+  margin-bottom: -25px;
 }
+/* styles the who what where part of the about page */
 
 .n-a-b, .comp-fr, .n-y-n-m, .ind-climb {
   padding-top: 25px;
 }
+/* padding for about page sections */
 
 .comp-fr {
   background-color: #F2F2F2;
 }
+/* changes background color */
 
 .subscribe {
   background-color: #3C3B3A;
   text-align: center;
 }
-
 .subscribe button {
   margin: 0;
   padding-left: 20px;
@@ -378,6 +385,7 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
 .ind-climb {
   background-color: #F2F2F2;
 }
+/* styles the subscribe section */
 
 .special-th {
   text-align: center;
@@ -409,38 +417,37 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   width: 152px;
   height: auto;
 }
+/* ^^^styles the images in the special thanks section^^^ */
 
 .green-img1 {
-  background-image: url(../img/about.jpg);
+  background-image: url(../img/about-700_x_466.jpg);
   height: 200px;
   background-size: cover;
   margin-top: 25px;
 }
 
 .green-img2 {
-  background-image: url(../img/services.jpg);
+  background-image: url(../img/services-700_x_466.jpg);
   height: 200px;
   background-size: cover;
 }
+/* Adds the green banner immages at mobile */
 
 .green-img1 h4, .green-img2 h4 {
   color: white;
   font-size: 50px;
   text-align: center;
   padding-top: 75px;
+  font-weight: bold;
 }
-
-.who-what-where {
-  padding-bottom: 40px;
-  margin-bottom: -25px;
-}
+/* styles the green immage text */
 
 .contact-us img {
   margin-top: 13px;
 }
+/* contact us image spacing */
 
 /* Contact Form */
-
 .contact-form {
   background-color: #26A682;
   color: white;
@@ -470,6 +477,11 @@ h1, p, .disc-icon, h2, h3, h5, h6, .green-btn, .disc-img, .green-btn-LG, .contac
   margin-bottom: 5px;
 }
 
+textarea {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #3C3B3A;
+}
+
 .contact-form fieldset textarea {
   border-radius: 0.8em;
   height: 100px;
@@ -490,16 +502,17 @@ form button {
   margin-bottom: 16px;
   box-shadow: 0px 15px 20px rgba(18, 74, 58, 0.479);
 }
-/* ^^Contact Form^^ */
+/* ^^Contact Form styles^^ */
 
 .location iframe {
   margin-top: 25px;
-
 }
+/* changes google map margin */
 
 .scroll-arrow {
   display: none;
 }
+/* hides the scroll arrow untill desktop view */
 
 /*Footer Styles*/
 footer {
@@ -525,8 +538,8 @@ footer {
   grid-template-rows: 1fr;
   padding-top: 32px;
   padding-bottom: 32px;
-
 }
+/* footer layout grid */
 
 footer p {
   color: white;
@@ -549,18 +562,28 @@ footer a {
   grid-column: 2 / 3;
   text-align: center;
 }
+/* alighns the social media icons */
 
 footer a img {
   width: 22.2px;
   height: auto; 
   margin: 5px;
 }
-/* ^^^ Footer STyles ^^^*/
+/* ^^^ Footer Styles ^^^*/
+
+@media (min-width: 475px) {
+  .subscribe button {
+    margin-left: 20px;
+  }
+  /* subscribe button changes */
+}
 
 @media (min-width: 700px) {
+  /* tablet view */
   .dropbtn {
     display: none;
   }
+  /* removes dropdown menu button */
   
   #menu-items {
     display: inline-flex;
@@ -570,6 +593,7 @@ footer a img {
     padding-right: 80px;
     list-style-type: none;
   }
+  /* styles nav for tablet/desktop */
 
   header {
     display: grid;
@@ -583,6 +607,7 @@ footer a img {
     justify-content: flex-start;
     margin-left: 80px;
   }
+  /* header layout */
 
   header nav ul li {
     border-bottom: none;
@@ -592,6 +617,7 @@ footer a img {
     margin-left: 80px;
     margin-right: 80px;
   }
+  /* changes the margin of all pages */
 
   p {
     font-size: 24px;
@@ -605,37 +631,50 @@ footer a img {
     font-size: 40px;
     margin-bottom: 20px;
   }
+  /* font size changes */
 
   .location p {
     font-size: 16px;
   }
+  /* chanhes location font size */
 
   .contact-form {
-    width: calc(100% - 160px);
+    width: 100%;
   }
+  /* fixes width of the contact form */
   .contact-us img {
     width: calc(100% - 160px);
     margin-left: 80px;
     margin-right: 80px;
   }
+  /* fixes width of contact us image */
 
   .contact-form {
-    padding-left: 46px;
-    padding-right: 46px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
+  /* contact form padding change */
 
   .contact-form fieldset textarea {
     height: 148px;
+  }
+  /* adds height to the contact form fieldset */
+
+  .green-btn {
+    width: 33.33%;
+    margin-left: calc(66.666% - 80px);
   }
 
   .green-btn-LG {
     width: 300px;
   }
+  /* changes button widths */
 
   .center-btn {
     display: grid;
     justify-items: center;
   }
+  /* centers the buttons */
 
   .disc-icon {
     grid-template-columns: repeat(4 , 1fr);
@@ -650,25 +689,11 @@ footer a img {
   .disc-icon a:nth-child(4) {
     grid-column: 4 / 5;
   }
-
-  .green-btn {
-    width: 33.33%;
-    margin-left: calc(66.666% - 80px);
-  }
+  /* changes layout of the discovery icons */
 
   .sa-president {
     display: grid;
     grid-template-columns: 40% 60%;
-  }
-
-  .sa-text p {
-    margin-left: 15px;
-    line-height: 30px;
-    margin-top: calc(5vw);
-  }
-
-  .who-what-where p {
-    font-size: 18px;
   }
 
   .sa-title {
@@ -678,26 +703,41 @@ footer a img {
     margin-top: calc(4vw);
   }
 
+  .sa-text p {
+    margin-left: 15px;
+    line-height: 30px;
+    margin-top: calc(5vw);
+  }
+  /* changes the layout of the sa president section */
+
+  .who-what-where p {
+    font-size: 18px;
+  }
+  /* changes font size */
+
   .n-a-b img,.comp-fr img, .n-y-n-m img, .ind-climb img{
     display: block;
   } 
+  /* makes the about page images display at tablet */
 
   .n-a-b, .n-y-n-m {
     display: grid;
     grid-template-columns: 340px 1fr;
+    justify-items: center;
+    align-items: center;
   }
 
   .comp-fr, .ind-climb {
     display: grid;
     grid-template-columns: 1fr 340px;
+    justify-items: center;
+    align-items: center;
   }
+  /* sets the grids for the about page items */
 
-
-  
   .n-a-b picture img, .n-y-n-m picture img {
     padding-left: 80px;
     margin-bottom: 20px;
-
   }
 
   .n-a-b div p, .n-y-n-m div p, .comp-fr div p, .ind-climb div p {
@@ -707,7 +747,6 @@ footer a img {
   .comp-fr picture img, .ind-climb picture img {
     padding-right: 80px;
     margin-bottom: 20px;
-
   }
 
   .n-a-b div h5, .n-a-b div h3, .n-a-b div p, .n-y-n-m div h5, .n-y-n-m div h3, .n-y-n-m div p{
@@ -717,21 +756,40 @@ footer a img {
   .comp-fr div h5, .comp-fr div h3, .comp-fr div p, .ind-climb div h5, .ind-climb div h3, .ind-climb div p{
     margin-right: 16px;
   }
-
-
+  /* margin and font size changes */
 
   .contact-btn {
     width: 45%;
     display: block;
     margin-left: 55%;
   }
+  /* contact form button changes */
 
-  .subscribe button {
-    margin-left: 60px;
+  .construct-header img {
+    padding-right: 40px;
   }
+
+  .contact-us img {
+    width: 70%;
+  }
+
+  .green-img1 {
+    background-image: url(../img/about-1200_x_400.jpg);
+    height: 200px;
+    background-size: cover;
+    margin-top: 25px;
+  }
+  
+  .green-img2 {
+    background-image: url(../img/services-1200_x_400.jpg);
+    height: 200px;
+    background-size: cover;
+  }
+  /* changes background image at tablet */
 }
 
 @media (min-width:960px) {
+  /* between tablet and desktop view */
 
   .home-header {
     display: grid;
@@ -757,44 +815,45 @@ footer a img {
     align-items: center;
     padding-top: 80px;
   }
+  /* changes the top section of each paghe to display of grid */
 
   .location {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-right: 80px;
   }
+  /* changes location section to display of grid */
 
   .disc-grid {
     background-color: #F2F2F2;
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  /* changes discovery grid sizing */
   
   .n-a-b, .n-y-n-m {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
   }
 
   .comp-fr, .ind-climb {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
   }
+  /* changes about page grid sizing */
 
   .n-a-b picture img, .n-y-n-m picture img {
     width: 100%;
     height: auto;
   }
- 
+ /* image sizing */
 
   .scroll-arrow {
     display: block;
     display: flex;
     justify-content: center;
   }
+  /* brings back the scroll arrow on the home page */
 
   .scroll-arrow a {
     text-align: center;
@@ -809,11 +868,13 @@ footer a img {
     height: auto;
     transform: rotate(180deg);
   }
+  /* styles the scroll arrow */
 
   .special-img {
     display: flex;
     justify-content: space-between;
   }
+  /* changes the display of the special thanks images */
 
   iframe {
     padding-top: 0;
@@ -821,6 +882,7 @@ footer a img {
     margin-bottom: 30px;
     padding-bottom: 40px;
   }
+  /* google maps styles */
 
   footer {
     margin-top: 0;
@@ -833,15 +895,17 @@ footer a img {
   .disc-grid {
     padding-top: 0;
   }
-
+  /* removes padding */
 }
 
 @media (min-width: 1200px) {
+  /* desktop view */
 
   .who-what-where {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
   }
+  /* displays who what where section as grid */
 
   .disc-grid {
     display: grid;
@@ -849,11 +913,11 @@ footer a img {
     justify-items: center;
     align-items: center;
     background-color: #F2F2F2;
-    padding-left: 80px;
-
+    padding-left: 140px;
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  /* changes home page to grid view */
 
   .disc-grid-2 div {
     grid-column: 1 / 2;
@@ -869,6 +933,7 @@ footer a img {
     grid-column: 2 / 3;
     padding-right: 80px;
   }
+  /* styles home page grid view */
 
   .sa-title {
     display: grid;
@@ -887,11 +952,24 @@ footer a img {
   .sa-text {
     padding-left: 10px;
   }
+  /* changes the style of the SA section */
   
   .who-what-where {
     padding-top: 80px;
     padding-bottom: 120px;
+    padding-left: 105px;
+    padding-right: 105px;
   }
+
+  .who-what-where h2, .who-what-where p {
+    margin: 0;
+  }
+
+  .who-what-where div {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+  /* changes padding */
 
   .n-a-b, .n-y-n-m, .comp-fr, .ind-climb {
     padding-top: 80px;
@@ -899,14 +977,74 @@ footer a img {
   }
 
   .special-th {
-    padding-right: 32%;
-    padding-left: 32%;
-    padding-top: 140px;
+    padding-top: 40px;
+    width: 625px;
+    margin: auto;
   }
 
   .special-img {
     padding-bottom: 140px;
   }
+  /* changes padding */
+
+  .n-a-b picture img, .n-y-n-m picture img {
+    padding-left: 140px;
+  }
+
+  .comp-fr picture img, .ind-climb picture img {
+    padding-right: 140px;
+  }
+
+  .location, .contact-grid {
+    margin-right: 140px;
+  }
+
+  .construct-header img {
+    padding-right: 140px;
+  }
+
+  .n-a-b picture img, .n-y-n-m picture img {
+    padding-left: 140px;
+  }
+
+  .comp-fr picture img, .ind-climb picture img {
+    padding-right: 140px;
+  }
+
+  h1, p, .disc-icon, h2, h3, h5, h6, .disc-img, .green-btn-LG, .contact-form {
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+
+  #menu-items {
+    padding-right: 140px;
+  }
+
+  .header-img, .contact-us img {
+    margin-left: 140px;
+  }
+  /* Desktop Margin */
+  /* This is the most inneficient way to do margins on a webpage */
+  /* In the future I would use a wrapper and possibly apply a class with a margin to these elements */
+  /* I did not realize my mistake until I had finished tablet view */
+
+  .green-img1 {
+    background-image: url(../img/about-1920_x_400.jpg);
+    height: 250px;
+    background-size: cover;
+    margin-top: 25px;
+  }
+  
+  .green-img2 {
+    background-image: url(../img/services-1920_x_400.jpg);
+    height: 250px;
+    background-size: cover;
+  }
+
+  .green-img1 h4, .green-img2 h4 {
+    padding-top: 110px;
+  }
+  /* changes background image at desktop */
 }
 
 /* KeyFrames for Animations */
@@ -918,7 +1056,7 @@ footer a img {
     transform: rotate(180deg);
   }
 }
-
+/*Dropdown menu animation*/
 @keyframes buttonBounce {
   0% {
     transform: translateY(0);
@@ -941,7 +1079,6 @@ footer a img {
   100% {
     transform: translateY(0px);
   }
-
 }
-/*Dropdown menu animation*/
+/* button animation */
 /* ^^^ KeyFrames for Animations ^^^ */
