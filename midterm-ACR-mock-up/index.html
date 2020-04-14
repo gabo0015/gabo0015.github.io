@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/logo.svg">
+  <title>ARC</title>
+</head>
+<!-- document head -->
+<body>
+  <header>
+    <div class="header-img">
+      <img src="img/logo.svg" alt="header logo">
+    </div>
+    <div class=".nav">
+      <nav class="drop">
+        <button class="dropbtn"><img src="img/burgmenu.png" alt="menu button" style="width: 20px; height: auto;"></button>
+        <ul class="menu-items" id="menu-items">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- header image, and nav -->
+  <main>
+    <div class="wrapper">
+      <div class="home-header">
+        <div>
+          <h1>Discover Your ARC.</h1>
+          <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
+          <div class="disc-icon">
+            <a><img src="icons/Icon-awesome-bowling-ball.svg" alt="bowling ball">Bowling</a>
+            <a><img src="icons/Icon-map-climbing.svg" alt="rock climbing">Rock Climbing</a>
+            <a><img src="icons/Icon-map-gym.svg" alt="fitness center">Fitness Center</a>
+            <a><img src="icons/Icon-awesome-basketball-ball.svg" alt="basket ball">Indoor Court</a>
+            <!-- discover icons -->
+          </div>
+          <div class="center-btn">
+              <button class="green-btn-LG">Get Started </button>
+          </div>
+        </div>
+        <div class="disc-img">
+          <img src="img/discover.svg" alt="discover image">
+        </div>
+      </div>
+      <!-- top of home page content and image -->
+      <div class="scroll-arrow">
+        <a href="#disc-grid">scroll<img src="icons/arrow.svg" alt="arrow"></a>
+      </div>
+      <!-- scroll arrow (hidden until desktop view) -->
+      <div class="disc-grid" id="disc-grid">
+        <div>
+          <picture>
+
+            <source srcset="img/resize-img/mobile/school-375_x_200.jpg 375w, img/resize-img/mobile/school-500_x_200.jpg 500w, img/resize-img/mobile/school-700_x_200.jpg 700w"
+            media="(max-width: 650px)" sizes="100vw">
+            
+            
+            <source srcset="img/resize-img/tablet/school-750_x_200.jpg 750w, img/resize-img/tablet/school-800_x_200.jpg 800w, img/resize-img/tablet/school-900_x_200.jpg 900w" media="(max-width: 1200px)" sizes="100vw">
+
+            <source srcset="img/resize-img/desktop/school-700_x_337.jpg 700w, img/resize-img/desktop/school-850_x_337.jpg 850w" media="(min-width: 1200px)" sizes="100vw">
+              
+            <img src="img/school.jpg" alt="school">
+      
+          </picture>
+        </div>
+        <div>
+          <h2>Discover.</h2>
+          <h3>Algonquin College</h3>
+          <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
+          <button class="green-btn"> Learn More </button>
+        </div>
+      </div>
+      <!-- Discover AC content (images hidden at mobile) -->
+      <div class="sa-president">
+        <div class="sa-title">
+          <img src="img/simon.jpg" alt="simon">
+          <p>Dijanelle Simon
+            SA President</p>
+        </div>
+        <div class="sa-text">
+          <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."
+          </p>
+        </div>
+      </div>
+      <!-- SA president content and image -->
+      
+      <div class="disc-grid disc-grid-2">
+        <picture>
+
+          <source srcset="img/resize-img/mobile/entertainment-375_x_200.jpg 375w, img/resize-img/mobile/entertainment-500_x_200.jpg 500w, img/resize-img/mobile/entertainment-700_x_200.jpg 700w"
+              media="(max-width: 650px)" sizes="100vw">
+              
+              
+          <source srcset="img/resize-img/tablet/entertainment-750_x_200.jpg 750w, img/resize-img/tablet/entertainment-800_x_200.jpg 800w, img/resize-img/tablet/entertainment-900_x_200.jpg 900w" media="(max-width: 1200px)" sizes="100vw">
+  
+          <source srcset="img/resize-img/desktop/entertainment-700_x_337.jpg 700w, img/resize-img/desktop/entertainment-850_x_337.jpg 850w" media="(min-width: 1200px)" sizes="100vw">
+                
+          <img src="img/entertainment.jpg" alt="entertainment image">
+        </picture>
+        <div>
+          <h2>Discover.</h2>
+          <h3>The entertainment</h3>
+          <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
+          <button class="green-btn"> Learn More </button>
+        </div>
+      </div>
+      <!-- Discovery entertainment section, content and image -->
+
+    </div>
+  </main>
+  <footer>
+    <div class="media-icon">
+      <p>Follow Us</p>
+      <img src="icons/facebook.svg" alt="facebook logo">
+      <img src="icons/instagram.svg" alt="instagram logo">
+      <img src="icons/twitter.svg" alt="twitter logo">
+      <img src="icons/youtube.svg" alt="youtube logo">
+    </div>
+    <a href="#"><img src="icons/arrow.svg" alt="arrow">back to top</a>
+  </footer>
+  <!-- footer content -->
+</body>
+</html>

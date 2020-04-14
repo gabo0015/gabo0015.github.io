@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Bootstrap!</title>
+  </head>
+  <body>
+    <header>
+      <a class="navbar-brand mr-0 d-flex justify-content-center bg-dark" href="#">
+        <img src="img/bootstrap-logo-light.svg" width="250" alt="lets look at logo">
+      </a>
+      <!-- Header image "LOGO" -->
+      <nav class="navbar navbar-expand-md d-flex justify-content-center navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTarget">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="components.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://getbootstrap.com/">Check it Out!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-light">
+      <div class="mx-3 mx-md-5 mx-lg-7 mx-xl-10 mt-3 ">
+        <!-- main container for content -->
+        <div class="container">
+          <div class="row">
+            <div class="pt-3 jumbotron col-md">
+              <h1>Bootstrap Components!</h1>
+              <div class="d-flex justify-content-center">
+                <img src="img/bootstrap-logo-comp.svg" width="250" alt="bootstrap components">
+              </div>
+              <p>Bootstrap comes with numerous built in components. From nav bars, to forms and even buttons. Almost everything you may need to quickly build and test your prototypes. Here you can find some examples of common components you may find yourself using:</p>
+            </div>
+            <div class="pt-3 jumbotron col-md">
+              <h1>Bootstrap Colors!</h1>
+              <p>Bootstrap comes with a built-in set of pre-defined colors. The prefix of the class determines the color target, and the end of the class name determines the color: </p>
+              <p>
+              The “text” or .text-(color) class is used to change the color of the text:	 class="text-primary"
+              </p>
+              <p class="text-primary">Creates blue text</p>
+              <p>
+                The “bg” or .bg-(color) class is used to change the color of the background:	 class="text-primary"
+                </p>
+                <p class="bg-primary text-light">Creates blue background</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="pt-3 jumbotron col-md">
+              <h1>The colors of Bootstrap!</h1>
+              <p>Bootstrap comes with a built-in set of 9 pre-defined colors. These can be used as both backgroun and text colors.</p>
+              <p class="bg-primary text-light">primary</p>
+              <p class="bg-secondary text-light">secondary</p>
+              <p class="bg-success text-light">succses</p>
+              <p class="bg-danger text-light">danger</p>
+              <p class="bg-warning text-light">warning</p>
+              <p class="bg-info text-light">info</p>
+              <p class="bg-light text-dark">light</p>
+              <p class="bg-dark text-light">dark</p>
+              <p class="bg-white text-dark">white</p>
+              <p>Colors in Bootstrap can also be used to style things like navs, footers, buttons, ect...</p>
+            </div>
+            <div class="pt-3 jumbotron col-md">
+              <h1>Bootstrap Buttons</h1>
+              <p>Bootstrap has custom button styles that can be used in combination with bootstrap colors. The class "btn" can also be used on a tags or input elements to create button links.</p>
+              <p>There are 2 main types of buttons. There is a normal filled button:</p>
+              <p>button class="btn btn-info"</p>
+              <button class="btn btn-info mb-3">Button</button>
+              <br>
+              <p>But there is also the outline button:</p>
+              <p>button class="btn btn-outline-info"</p>
+              <button class="btn btn-outline-info mb-3">Button</button>
+              <P>Buttons have pre built hover effects included in bootstrap. Buttons can also be different colors depending on which color you decide to use.</P>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="pt-3 jumbotron col-md">
+              <h1>Bootstrap Navs!</h1>
+              <p>Bootstrap has built in components to help make creating and styling navigation menus as easy as possible. There is the ability to create Dropdown menus:</p>
+              <nav class="navbar navbar-dark bg-secondary">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbardemo">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbardemo">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <br>
+              <p>As well as creating a traditional nav bar without the dropdown menu:</p>
+              <nav class="navbar navbar-dark bg-secondary navbar-expand">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <br>
+              <p>As in the example above, you can also set a class of "active" on a nav item to make it active, or you can set a class of "disabled" to disable a nav item.</p>
+            </div>
+            <div class="pt-3 jumbotron col-md">
+              <h1>Bootstrap Cards</h1>
+              <P>Bootstrap comes with pre-styled cards that allow you to change the way content is displayed by creating a div with a class of "card". For example:</P>
+              <div class="card p-3">
+                <img src="img/bootstrap-logo-cards.svg" class="card-img-top" style="height: 150px;" alt="cards image">
+                <h5 class="card-title">Bootstrap Card</h5>
+                <h6 class="ard-subtitle">Card Subtitle</h6>
+                <p>Bootstrap cards can incorperate a number of different page elements such as links, buttons, and images.</p>
+                <button class="btn btn-warning mb-3">Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="pt-3 jumbotron col-md">
+              <h1>Bootstrap Grids</h1>
+              <p>Bootstrap uses a flexbox based grid system. Here are just a few examples of how this can be used</p>
+              <div class="container">
+                <div class="row">
+                  <div class="jumbotron bg-light col-md p-3 ml-1 mr-1">
+                    <h5>Grid Example 1</h5>
+                    <div class="row bm-3 m-3">
+                      <div class="col-5 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-2 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-5 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-3 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-6 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-3 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-5 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-2 bg-success p-3 border border-dark">
+                      </div>
+                      <div class="col-5 bg-success p-3 border border-dark">
+                      </div>
+                    </div>
+                    <p>In this example the gird has differenmt sized elements by using the class of "col" and assigning it a value between 1 and 12.</p>
+                  </div>
+                  <div class="jumbotron bg-light col-md p-3 ml-1 mr-1">
+                    <h5>Grid Example 2</h5>
+                    <div>
+                      <div class="col-4 bg-info p-3 text-white border border-dark">
+                      </div>
+                      <div class="col-4 bg-info p-3 text-white border border-dark offset-7">
+                      </div>
+                      <div class="col-6 bg-info p-3 text-white border border-dark offset-1">
+                      </div>
+                    </div>
+                    <br>
+                    <p>In this example the gird has offset the elements by using the class of "offset" and asigning it a value.</p>
+                  </div>
+                  <div class="jumbotron bg-light col-md p-3 ml-1 mr-1">
+                    <h5>Grid Example 3</h5>
+                    <div class="row mb-3 ml-1 mr-1">
+                      <div class="col-4 bg-danger p-3 text-white border border-dark order-last">
+                        #1
+                      </div>
+                      <div class="col-4 bg-danger p-3 text-white border border-dark order-1">
+                        #2
+                      </div>
+                      <div class="col-4 bg-danger p-3 text-white border border-dark order-12">
+                        #3
+                      </div>
+                      <div class="col-6 bg-danger p-3 text-white border border-dark order-first">
+                        #4
+                      </div>
+                      <div class="col-6 bg-danger p-3 text-white border border-dark">
+                        #5
+                      </div>
+                    </div>
+                    <p>In this example the gird has changed ordr by using the class of "order" and asigning the order a value.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-dark pt-3 pb-3 d-flex justify-content-center text-light">
+        <p>&copy; 2020</p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
