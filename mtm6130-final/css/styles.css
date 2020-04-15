@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Squada+One&display=swap');
+/*impotrs google font*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Reset*/
+/**/
+/**/
+
+
+
+* {
+  box-sizing: border-box;
+}
+/*Default box sizing setting*/
+
+/*commmon page elements*/
+header div {
+  background-image: url(../img/gamepad-video-game-controller-game-controller-controller-159393.jpg);
+  height: 240px;
+  background-size: cover;
+  background-repeat: repeat;
+}
+/*sets the header image*/
+
+header {
+  background-color: #0d1f2d;
+}
+
+header div img {
+  width: 40px;
+  height: auto;
+}
+
+header h2 {
+  position: relative;
+  text-align: center;
+  padding-top: 2em;
+  color: rgb(255, 255, 255);
+  font-family: 'Squada One', cursive, Arial, sans-serif;
+  font-size: 3em;;
+}
+/*sets the text over the header image and centers it*/
+
+
+/*styles the nav in the header*/
+header nav ul li {
+  border-bottom: 1px solid white;
+}
+
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  background-color: #0d1f2d;
+  color: white;
+}
+
+header nav ul li a:hover {
+  background-color: #707078;
+  transition-duration: .2s;
+  cursor: pointer;
+}
+/*styles the nav in the header*/
+
+/* dropdown menu styling*/
+.menu-items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+/* sets a display of none so that the menu items (nav) are not seen while the dropdown menu is not active */
+
+.drop:hover .menu-items {
+  z-index: 1;
+  display: block;
+}
+
+/*sets the display to block when the menu button is hovered on to have it display, Then sets a z-index of 1 to have the menu to display on top of the other content on the page */
+
+button {
+  padding: .5em 2.5em;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background-color: #0d1f2d;
+  border: none;
+  border-bottom: 1px solid white;
+}
+/* styles the button for the drop down menu as well as the submit button on the contact form*/
+
+button:hover {
+  background-color: #707078;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+/* adds a hover effect to the buttons*/
+/* ^^^dropdown menu styling^^^ */
+
+
+body {
+  background-color: #f7f6f7;
+  font-family: 'Open Sans', sans-serif, Arial, sans-serif;
+  font-size: 1em;
+}
+/*sets body background color and font*/
+
+main {
+  padding-bottom: 2em;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+/* sets width for the body elements across all pages*/
+h1 {
+  font-size: 2em;
+  font-weight: bolder;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+/*styles all h1 elements*/
+
+p {
+  margin-bottom: 1em;
+}
+/*sets spacing under p elements*/
+
+.about-img img {
+  width: 100%;
+  height: auto;
+}
+/*styles the image on the about page*/
+
+.img-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.img-grid img {
+  width: 100%;
+  height: auto;
+}
+/*sets index page images to grid*/
+
+/*table styles*/
+thead {
+  font-weight: bold;
+  background-color: #0d1f2d; 
+  color: white;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+table caption {
+  font-weight: bold;
+  margin: 1em;
+  font-size: 1.2em;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: .5rem;
+}
+/*table styles^^^*/
+
+footer {
+  text-align: center;
+  background-color: #0d1f2d;
+}
+
+footer p {
+  color: white;
+  padding: 1em;
+  margin: 0%;
+}
+
+footer p img {
+  width: 15px;
+  height: auto;
+}
+/*basic footer styles*/
+
+/*footer nav styling*/
+footer nav ul {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  width: 9em;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+footer nav ul li a:hover {
+  background-color: #707078;
+  transition: .2s;
+}
+
+.to-top-ship {
+  width: 15px;
+  height: auto;
+}
+/*styles the nav in the footer^^^*/
+
+/*common page elements*/
+
+iframe {
+  border: 1px solid black;
+  width: 100%;
+  height: 400px;
+}
+/*google maps styling*/
+
+/*contact form styles*/
+form {
+  display: block;
+  background-color: #70707838;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0em;
+}
+
+fieldset {
+  border: none;
+  font-size: 1em;
+}
+
+form input, form textarea {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  resize: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  width: 10%;
+}
+
+fieldset input[type="text"],
+textarea {
+  border: 1px solid rgb(85, 141, 187);
+  border-radius: 5px;
+}
+
+.formbtn {
+  border: none;
+  border-radius: 3px;
+}
+/*contact form styles^^^*/
+
+figure {
+  padding-top: 1.5em;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.5em;
+}
+/*styles the font and spacing for the text under the images on the index page*/
+
+@media (min-width: 768px) {
+/*first media query*/
+
+  body {
+    font-size: 1.2rem;
+  }
+/*sets a larger font size on the body*/
+
+  header h2 {
+    padding-top: 1.6em;
+    font-size: 4em;
+  }
+/*sets a larger font size on the header image*/
+
+  header div img {
+    width: 60px;
+  }
+
+  header div {
+    height: 300px;
+  }
+/*styles header images*/
+
+  .wrapper {
+    max-width: 1200px;
+  }
+/*sets a larger max width on the wrapper*/
+
+.dropbtn {
+    display: none;
+  }
+  
+  .menu-items {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    padding-left: 7%;
+
+  }
+  /* removes the drop down menu at 768px*/
+  
+  header nav ul li {
+    display: inline-flex;
+    border-bottom: none;
+  }
+
+  header nav ul li a {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+/*styles the header nav buttons after the dropdown menu is removed*/
+
+  .img-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  /*styles the images on the index page*/
+  
+  .formbtn {
+    grid-column: 1/3; 
+    width: 10em;
+  }
+  /*styles the contact form at desktop view*/
+
+  .contact-wrapper, .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+
+  .contact-wrapper, .about-wrapper:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .contact-wrapper, .about-wrapper:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  /*sets the contact form and google map to a display of grid to display them side by side
+  as well as the content on the about page*/
+
+  .about-img {
+    width: 60%;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  /*sets the about page image to float to resize at tablet view*/
+}
+
+
+@media (min-width: 1200px) {
+
+  .img-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /*sets the index page images to 3 colums*/
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+  }
+  
+  fieldset:nth-of-type(1) {
+    width: 95%
+  }
+  
+  fieldset:nth-of-type(2) {
+    margin-left: auto;
+    width: 95%;
+  }
+  fieldset:nth-of-type(3) {
+    width: 95%;
+  }
+
+  fieldset:nth-of-type(4) {
+    width: 100%;
+    grid-column: 1/3;
+  }
+  /*styles the form to display for desktop at a separate breakpoint to allow more input space at first breakpoint*/
+}
