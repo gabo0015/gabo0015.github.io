@@ -1,0 +1,439 @@
+@import 'var';
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Pacifico&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $maincolor;
+  font-family: 'PT Mono', monospace;
+  color: $mainfontcolor;
+
+  h1 {
+    font-family: 'Pacifico', cursive;
+  }
+
+  h2 {
+    font-family: 'PT Mono', monospace;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+%hover {
+  background-color: #707078;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+%img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: $headercolor;
+  padding-top: 1em;
+
+  .header-img {
+    padding-bottom: 1em;
+
+    a {
+      margin: auto;
+      padding-bottom: 1em;
+
+      img {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+}
+
+header nav ul li {
+  list-style: none;
+
+  img {
+    width: 80px;
+    height: auto;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    background-color: $headercolor;
+    transition: .5s ease-in-out;
+
+    &:hover {
+      @extend %hover;
+    }
+  }
+}
+
+.header-pages {
+  #btn {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: -7em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    border: none;
+    background-color: $headercolor;
+  }
+
+  #header-img {
+
+
+    a img {
+      width: 70px;
+      margin: unset;
+    }
+  }
+}
+
+.menu-items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.drop:hover .menu-items {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav button {
+  padding: .5em 2.5em;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background-color: $buttoncolor;
+  border: none;
+  border-bottom: 1px solid white;
+
+  &:hover {
+    @extend %hover;
+
+    img {
+      animation: rotateMenu 0.4s ease-in backwards;
+    }
+  }
+}
+
+main {
+  .about-image {
+    @extend %img;
+  }
+
+  .wrapper {
+    margin: 2em;
+
+    img {
+      @extend %img;
+    }
+
+    .back-link {
+      a {
+        img {
+          padding-left: 10px;
+        }
+
+        display: flex;
+        width: 10em;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        background-color: $headercolor;
+        padding: 0.3em;
+        border-radius: 0.4em;
+
+        &:hover {
+          @extend %hover;
+        }
+      }
+    }
+
+    .see-site-link {
+      @extend .back-link;
+      margin-top: 2em;
+
+      a {
+        width: 100%;
+
+        img {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .recent-work {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+
+      div {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+
+        img {
+          display: block;
+          @extend %img;
+        }
+      }
+    }
+  }
+}
+
+.site-demo {
+  img {
+    @extend %img;
+  }
+
+  padding-bottom: 3em;
+}
+
+.demo-page-img img {
+  padding-bottom: 2em;
+}
+
+// Modal image styling
+
+.md-item {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: .3s;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding-top: 150px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  margin-top: 4em;
+}
+
+.esc {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: $maincolor;
+  font-size: 60px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+  margin-top: 2em;
+}
+
+.about-grid {
+  margin-bottom: 2em;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: $footercolor;
+  color: white;
+}
+
+
+@media (min-width:650px) {
+
+  .header-pages .drop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between
+  }
+
+  body #btn {
+    display: none !important;
+  }
+
+  %hover2 {
+    background-color: #707078;
+    transition-duration: .3s;
+    cursor: pointer;
+  }
+
+  .header-pages {
+    align-items: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+
+    .header-img {
+      padding-bottom: 0em;
+      padding-left: 4em;
+
+      a {
+        margin: auto;
+        padding-bottom: 0em;
+
+        img {
+          width: 80px;
+          height: auto;
+          margin-left: 4em;
+
+        }
+      }
+    }
+
+    #menu-items {
+      display: inline-flex;
+      position: relative;
+      text-decoration: none;
+      justify-content: flex-end;
+      padding-right: 4em;
+      list-style-type: none;
+
+      li a {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+    }
+  }
+
+  .home-header {
+    .dropbtn {
+      display: none;
+    }
+
+    #menu-items {
+      display: inline-flex;
+      position: relative;
+      text-decoration: none;
+      justify-content: space-evenly;
+      list-style-type: none;
+      background-color: $buttoncolor;
+
+      li a {
+        width: 100%;
+        background-color: $buttoncolor;
+
+        &:hover {
+          @extend %hover2;
+        }
+      }
+
+    }
+  }
+
+
+  main {
+    .wrapper {
+      margin: 4em;
+    }
+  }
+}
+
+
+@media (min-width: 960px) {
+  main {
+    margin: 6em;
+
+    .wrapper {
+      max-width: 980px;
+      margin: auto;
+
+      .recent-work {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+
+  .demo-page-img,
+  .about-grid,
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+
+  .header-pages {
+    .header-img {
+      padding-left: 8em;
+
+      a {
+        img {
+          margin-left: 4em;
+
+        }
+      }
+    }
+
+    #menu-items {
+      padding-right: 8em;
+    }
+  }
+
+  .space {
+    height: 8vh;
+  }
+
+  .space2 {
+    height: 14vh;
+  }
+}
+
+
+// animations
+@keyframes rotateMenu {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
