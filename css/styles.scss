@@ -1,6 +1,6 @@
 @import 'var';
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&display=swap');
 
 
 * {
@@ -11,7 +11,7 @@
 
 body {
   background-color: $maincolor;
-  font-family: 'PT Mono', monospace;
+  font-family: 'Noto Sans JP', sans-serif;
   color: $mainfontcolor;
 
   h1 {
@@ -19,7 +19,8 @@ body {
   }
 
   h2 {
-    font-family: 'PT Mono', monospace;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 1em;
   }
 
   h3 {
@@ -72,6 +73,13 @@ header nav ul li {
     text-decoration: none;
     background-color: $headercolor;
     transition: .5s ease-in-out;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+
 
     &:hover {
       @extend %hover;
@@ -215,6 +223,24 @@ main {
 }
 
 // Modal image styling
+
+.demo-img {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+}
+
+.recent-work div a img {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+}
 
 .md-item {
   cursor: pointer;

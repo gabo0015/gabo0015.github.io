@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +8,7 @@
 
 body {
   background-color: #F1F1F1;
-  font-family: 'PT Mono', monospace;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #444444;
 }
 
@@ -17,7 +17,8 @@ body h1 {
 }
 
 body h2 {
-  font-family: 'PT Mono', monospace;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 1em;
 }
 
 body h3 {
@@ -72,6 +73,16 @@ header nav ul li a {
   background-color: #34435E;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1em;
 }
 
 .header-pages #btn {
@@ -190,6 +201,26 @@ main .wrapper .recent-work div img {
 
 .demo-page-img img {
   padding-bottom: 2em;
+}
+
+.demo-img {
+  cursor: pointer;
+}
+
+.demo-img:hover {
+  opacity: 0.8;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.recent-work div a img {
+  cursor: pointer;
+}
+
+.recent-work div a img:hover {
+  opacity: 0.8;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .md-item {
