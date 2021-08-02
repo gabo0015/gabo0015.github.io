@@ -26,7 +26,7 @@ body h3 {
 }
 
 header nav ul li a:hover, nav button:hover, main .wrapper .back-link a:hover, main .wrapper .see-site-link a:hover {
-  background-color: #707078;
+  background-color: #1a5871;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   cursor: pointer;
@@ -38,12 +38,12 @@ main .about-image, main .wrapper img, main .wrapper .recent-work div img, .site-
 }
 
 header {
-  background-color: #34435E;
-  padding-top: 1em;
+  background-color: #153c66;
 }
 
 header .header-img {
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 header .header-img a {
@@ -70,7 +70,7 @@ header nav ul li img {
 header nav ul li a {
   display: block;
   text-decoration: none;
-  background-color: #34435E;
+  background-color: #153c66;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   color: white;
@@ -98,7 +98,7 @@ header nav ul li a {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   border: none;
-  background-color: #34435E;
+  background-color: #153c66;
 }
 
 .header-pages #header-img a img {
@@ -127,7 +127,7 @@ nav button {
   width: 100%;
   text-decoration: none;
   color: white;
-  background-color: #2f3d55;
+  background-color: #153c66;
   border: none;
   border-bottom: 1px solid white;
 }
@@ -154,7 +154,7 @@ main .wrapper .back-link a, main .wrapper .see-site-link a {
           align-items: center;
   text-decoration: none;
   color: white;
-  background-color: #34435E;
+  background-color: #153c66;
   padding: 0.3em;
   border-radius: 0.4em;
 }
@@ -200,6 +200,10 @@ main .wrapper .recent-work div img {
 }
 
 .demo-page-img img {
+  padding-bottom: 2em;
+}
+
+.demo-page-single img {
   padding-bottom: 2em;
 }
 
@@ -363,11 +367,11 @@ footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     list-style-type: none;
-    background-color: #2f3d55;
+    background-color: #153c66;
   }
   .home-header #menu-items li a {
     width: 100%;
-    background-color: #2f3d55;
+    background-color: #153c66;
   }
   main .wrapper {
     margin: 4em;

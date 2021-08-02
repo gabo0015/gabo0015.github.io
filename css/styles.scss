@@ -29,7 +29,7 @@ body {
 }
 
 %hover {
-  background-color: #707078;
+  background-color: #1a5871;
   transition-duration: .3s;
   cursor: pointer;
 }
@@ -41,10 +41,11 @@ body {
 
 header {
   background-color: $headercolor;
-  padding-top: 1em;
+  // margin-top: 1em;
 
   .header-img {
     padding-bottom: 1em;
+    padding-top: 1em;
 
     a {
       margin: auto;
@@ -222,6 +223,10 @@ main {
 }
 
 .demo-page-img img {
+  padding-bottom: 2em;
+}
+
+.demo-page-single img {
   padding-bottom: 2em;
 }
 
