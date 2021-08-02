@@ -43,9 +43,25 @@ header {
   background-color: $headercolor;
   // margin-top: 1em;
 
-  .header-img {
+  .header-img1 {
     padding-bottom: 1em;
     padding-top: 1em;
+
+    a {
+      margin: auto;
+      padding-bottom: 1em;
+
+      img {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+
+  .header-img {
+    padding-bottom: 1em;
 
     a {
       margin: auto;
@@ -102,13 +118,16 @@ header nav ul li {
   }
 
   #header-img {
+    a {
 
-
-    a img {
-      width: 70px;
-      margin: unset;
-      padding-top: 0.25em;
+      img {
+        width: 70px;
+        margin: unset;
+        padding-top: 0.25em;
+      }
     }
+
+
   }
 }
 
@@ -332,7 +351,7 @@ footer {
   }
 
   %hover2 {
-    background-color: #707078;
+    background-color: #1a5871;
     transition-duration: .3s;
     cursor: pointer;
   }
@@ -369,7 +388,7 @@ footer {
 
       li a {
         padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-right: 1.5em;
       }
     }
   }

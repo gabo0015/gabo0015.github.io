@@ -41,9 +41,25 @@ header {
   background-color: #153c66;
 }
 
-header .header-img {
+header .header-img1 {
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+header .header-img1 a {
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+header .header-img1 a img {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: auto;
+}
+
+header .header-img {
+  padding-bottom: 1em;
 }
 
 header .header-img a {
@@ -313,7 +329,7 @@ footer {
     display: none !important;
   }
   .home-header #menu-items li a:hover {
-    background-color: #707078;
+    background-color: #1a5871;
     -webkit-transition-duration: .3s;
             transition-duration: .3s;
     cursor: pointer;
@@ -352,7 +368,7 @@ footer {
   }
   .header-pages #menu-items li a {
     padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-right: 1.5em;
   }
   .home-header .dropbtn {
     display: none;
