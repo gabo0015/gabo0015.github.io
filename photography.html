@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/icons/LOGO.svg">
   <title>Photography</title>
 </head>
@@ -36,55 +37,18 @@
       <p>Click on any image to expand it!</p>
       <br>
 
-      <div class="image-grid">
-        <img src="img/IMG_1.jpg" class="md-item" id="md-img" alt="Toronto Skyline">
-        <img src="img/IMG_2.jpg" class="md-item" alt="ocean in bc">
-        <img src="img/IMG_0746_edit.jpg" class="md-item" alt="mine">
-        <img src="img/IMG_1857-copy.jpg" class="md-item" alt="Sunset over lake">
-        <img src="img/IMG_3594.jpg" class="md-item" alt="Flowers">
-        <img src="img/IMG_0419.jpg" class="md-item" alt="Reflected suns">
-        <img src="img/IMG_0324.jpg" class="md-item" alt="Train">
-        <img src="img/IMG_1063.jpg" class="md-item" alt="Ship at sunset">
-        <img src="img/IMG_21.jpg" class="md-item" alt="Berries on a tree">
-        <img src="img/Mill_1.jpg" class="md-item" alt="Old gear">
-        <img src="img/passing_trian_2.jpg" class="md-item" alt="Passing train">
-        <img src="img/IMG_29.jpg" class="md-item" alt="Falls at night">
-        <img src="img/IMG_9.jpg" class="md-item" alt="Locks on a bridge">
-        <img src="img/IMG_19.jpg" class="md-item" alt="Fire">
-        <img src="img/IMG_9991.jpg" class="md-item" alt="Fireworks">
-        <img src="img/IMG_3691.jpg" class="md-item" alt="wood structure">
-        <img src="img/IMG_3693.jpg" class="md-item" alt="College at night">
+      <div class="gallery" id="gallery">
+
       </div>
-
-      <!-- Modal class -->
-      <div class="modal" id="test-modal">
-        <!-- close button -->
-        <span class="esc">&times;</span>
-        <!-- modal image -->
-        <img src="#" class="modal-img" id="img01" alt="modal">
+      <div class="img-layover" id="img-layover">
+        <span id="escape-btn">&times;</span>
+        <h2 id="img-title" class="img-title"></h2>
+        <img src="#" alt="larger image" id="img-display">
+        <h3 id="imginfo"></h3>
       </div>
-
-      <script>
-        // gets the modal
-        var modal = document.getElementById("test-modal");
-        // gets the image and inserts it into the modal
-        var modalImg = document.getElementsByClassName("modal-img")[0];
-        var images = document.getElementsByClassName("md-item");
-        var span = document.getElementsByClassName("esc")[0];
-        // to close image
-        span.onclick = function () {
-          modal.style.display = "none";
-        };
-
-        function clickHandler() {
-          modal.style.display = "flex";
-          modalImg.src = this.src;
-        }
-        for (var image of images) {
-          image.addEventListener("click", clickHandler);
-        }
-      </script>
-    </div>
+  </main>
+  <script src="script.js"></script>
+  </div>
   </main>
   <footer>
     <p>K Gab 2021</p>
