@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to Scramble.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Welcome to Scramble!</h1>
+    <div class="score">
+      <h2>{{ game.points }}<br>Points</h2>
+      <h2>{{ game.strikes }}<br>Strikes</h2>
+
+    </div>
+    <div class="scramble">
+      <h2 v-if="game.active">{{ game.scrambled }}</h2>
+      <h3>{{ game.message }}</h3>
+    </div>
+    <form v-if="game.active" @submit.prevent="checkWord">
+      <input type="text" v-model="game.guess">
+
+    </form>
+    <button v-if="game.active" @click="skipWord" class="button">{{ game.pass }} Passes remaining</button>
+
+    <div>
+      <button v-if="game.over" @click="playAgain">Play Again!</button>
+
+      <button v-else v-if="!game.active" @click="gameStart">Play!</button>
+    </div>
+    <button class="restart" v-if="game.active" @click="gameReset">Restart</button>
+  </div>
+
+  <script src="scramble.js"></script>
+</body>
+
+</html>

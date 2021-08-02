@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <button id="settingsBtn">&#128343; Settings &#128343;</button>
+    <div class="settings" id="settings">
+      <form id="clockType">
+        <p>Clock Type</p>
+        <input type="radio" id="analogSelect" name="selectClock" value="analog">
+        <label for="analog">Analog</label>
+        <br>
+        <input type="radio" id="digitalSelect" name="selectClock" value="digital">
+        <label for="analog">Digital</label>
+        <br>
+        <input type="radio" id="bothSelect" name="selectClock" value="both">
+        <label for="analog">Both</label>
+      </form>
+      <br>
+      <form id="dateInfo">
+        <p>Show Date</p>
+        <input type="radio" id="showDate" name="showDate" value="yes">
+        <label for="analog">Yes</label>
+        <br>
+        <input type="radio" id="dontShowDate" name="showDate" value="no">
+        <label for="analog">No</label>
+      </form>
+      <br>
+      <form id="secondsOption">
+        <p>Show Seconds</p>
+        <input type="radio" id="showSeconds" name="showSeconds" value="yes">
+        <label for="analog">Yes</label>
+        <br>
+        <input type="radio" id="dontShowSeconds" name="showSeconds" value="no">
+        <label for="analog">No</label>
+      </form>
+
+    </div>
+
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <div class="greeting">
+        <h2 id="greeting"></h2>
+      </div>
+      <div class="analogClock" id="analogClock">
+        <img src="img/clock hours.svg" alt="hour hand" id="hour">
+        <img src="img/clock minutes.svg" alt="minute hand" id="minute">
+        <img src="img/clock seconds.svg" alt="second hand" id="second">
+
+      </div>
+      <div class="clock">
+        <div class="digitalClock" id="digitalClock">
+          <p id="hours">00</p>
+          <p id="animate1">:</p>
+          <p id="minutes">00</p>
+          <p id="animate2">:</p>
+          <p id="seconds">00</p>
+          <p id="ampm"></p>
+        </div>
+      </div>
+      <div class="date" id="date">
+        <p id="fullDate"></p>
+      </div>
+      <div class="moreTimeInfo">
+        <button id="more">More</button>
+        <div id="moreTimeInfo">
+          <div class="timeInfo">
+            <p id="dayOfWeek"></p>
+            <p id="dayOfMonth"></p>
+            <p id="dayOfYear"></p>
+            <p id="weekOfYear"></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+
+
+  </footer>
+
+</body>
+
+<script src="script/luxon.min.js"></script>
+<script src="script/script.js"></script>
+
+</html>

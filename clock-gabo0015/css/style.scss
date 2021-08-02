@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: slategray;
+}
+
+header {
+
+  #settingsBtn {
+    padding: 0.3em 1em;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: rgb(16, 60, 124);
+    color: white;
+    border-radius: 0.5em;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: rgb(16, 60, 124);
+      background-color: rgba(255, 255, 255, 0.699);
+      border: 2px solid rgb(16, 60, 124);
+      cursor: pointer;
+    }
+  }
+
+  #settings {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(16, 59, 124, 0.596);
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 1.5em;
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.wrapper {
+  margin: auto;
+  color: white;
+  max-width: 800px;
+
+  button {
+    padding: 0.3em 1em;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: rgb(16, 60, 124);
+    color: white;
+    border-radius: 0.5em;
+    transition-duration: 0.5s;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    &:hover {
+      color: rgb(16, 60, 124);
+      background-color: rgba(255, 255, 255, 0.699);
+      border: 2px solid rgb(16, 60, 124);
+      cursor: pointer;
+    }
+  }
+
+  .greeting {
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5em;
+  }
+
+  .date {
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
+  }
+
+  .moreTimeInfo {
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  #moreTimeInfo {
+    display: none;
+
+    .timeInfo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 20px;
+    }
+  }
+}
+
+.analogClock {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  fill: white;
+
+  img {
+    position: absolute;
+    width: 300px;
+    fill: rgb(0, 0, 0);
+  }
+}
+
+.clock {
+  position: relative;
+  text-align: center;
+
+  .digitalClock {
+    display: grid;
+    grid-template-columns: repeat(6, 45px);
+    justify-content: center;
+    justify-items: center;
+    font-size: 3em;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  #ampm {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 0.5em;
+  }
+}
+
+.dots {
+  color: rgba(255, 255, 255, 0);
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    .greeting {
+      font-size: 1.7em;
+    }
+  }
+
+  .analogClock {
+    width: 400px;
+    height: 400px;
+
+    img {
+      position: absolute;
+      width: 400px;
+      fill: rgb(0, 0, 0);
+    }
+  }
+
+  .clock {
+    .digitalClock {
+      font-size: 3.2em;
+    }
+  }
+}
